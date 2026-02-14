@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel's Swimsuit Picks - Feb 14, 2026</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f0;
+            color: #333;
+            padding: 24px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .style-notes {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .style-notes h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        .style-notes ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .style-notes li {
+            background: #e8e8e4;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #444;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        .card.favorite { border: 3px solid #2d6a4f; }
+        .card.favorite .badge {
+            display: inline-block;
+            background: #2d6a4f;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 0 0 8px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .img-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            background: #f0f0ec;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 16px 20px 20px;
+        }
+        .brand {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+        .name {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin-bottom: 8px;
+        }
+        .desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .notes {
+            font-size: 13px;
+            color: #8b6914;
+            background: #fdf8e8;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .link-btn:hover { background: #333; }
+        .store-info {
+            max-width: 700px;
+            margin: 40px auto 0;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .store-info h2 { font-size: 16px; margin-bottom: 8px; }
+        .store-info p { font-size: 14px; color: #666; line-height: 1.6; }
+        .store-info a { color: #2d6a4f; }
+    </style>
+</head>
+<body>
+
+<h1>Rachel's Swimsuit Picks</h1>
+<p class="subtitle">Valentine's Day Shopping Sheet &mdash; Feb 14, 2026</p>
+
+<div class="style-notes">
+    <h2>Style Profile for the Consultant</h2>
+    <ul>
+        <li>Wire-free only</li>
+        <li>V-neck or wrap tops</li>
+        <li>High-waisted bottoms</li>
+        <li>Smooth fabric (no ruching)</li>
+        <li>Sporty + sophisticated</li>
+        <li>Long torso</li>
+        <li>Hardware = bonus</li>
+        <li>Navy / Black / Green / Blue</li>
+        <li>Backyard comfort, not resort</li>
+        <li>Board shorts option too</li>
+    </ul>
+</div>
+
+<div class="grid">
+
+    <!-- CARD 1: FAVORITE -->
+    <div class="card favorite">
+        <div class="img-wrapper">
+            <span class="badge">Favorite</span>
+            <img src="https://cdn-review.cupshe.com/cmc-admin/2024_10_14/15_13_514/b1b123e8-dbf2-4075-8430-8febe2bf540b/DAA12C4E006AR/1.jpg" alt="Black & Eucalyptus Wrapped Bikini">
+        </div>
+        <div class="card-body">
+            <div class="brand">Cupshe</div>
+            <div class="name">Black & Eucalyptus Wrapped Bikini Top & High-Waisted Bottoms Set</div>
+            <div class="price">$41.00</div>
+            <div class="desc">Wrap-style top with bold black/eucalyptus color block. High-waisted bottoms. Sleek lines, modern elegance. 4.8 stars (459 reviews).</div>
+            <div class="notes">Rachel's #1 pick. Loves the wrap style, green color, and sporty-clean look.</div>
+            <a class="link-btn" href="https://bit.ly/4bRJ22x" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <div class="img-wrapper">
+            <img src="https://cdn-review.cupshe.com/cmc-admin/2023_04_10/13_08_040/eee442df-988d-4cdf-bfaf-3e361c9eeb83/120000200490/1.jpg" alt="Longline V Neck Navy Bikini">
+        </div>
+        <div class="card-body">
+            <div class="brand">Cupshe</div>
+            <div class="name">Longline V Neck Bralette & Navy Classic High Waist Bikini Set</div>
+            <div class="price">$34.00</div>
+            <div class="desc">Longline bralette with deep V-neck. Classic navy high-waist bottom. Sporty and clean. 4.7 stars (277 reviews).</div>
+            <div class="notes">First pick that caught Rachel's eye. Sporty, comfortable, great reviews from real women.</div>
+            <a class="link-btn" href="https://bit.ly/4tB26IJ" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <div class="img-wrapper">
+            <img src="https://cdn.shopify.com/s/files/1/1869/0651/files/PWOP_Bikini_Top_Hibiscus_Lava_Lifestyle_3.jpg" alt="Summersalt Perfect Wrap Bikini Top">
+        </div>
+        <div class="card-body">
+            <div class="brand">Summersalt</div>
+            <div class="name">Perfect Wrap Bikini Top + Wrap High Leg High Rise Bottom</div>
+            <div class="price">$60 top + $45-65 bottom</div>
+            <div class="desc">Faux-wrap front with functional tie. Wide straps, high back coverage. 4x compression, 5x strength fabric. Recycled materials. Sizes 2-22.</div>
+            <div class="notes">Premium quality. Rachel thinks she's ordered from Summersalt before. Liked the second colorway. Multiple colors available.</div>
+            <a class="link-btn" href="https://bit.ly/4rbLIN8" target="_blank" style="margin-right: 8px;">View Top &rarr;</a>
+            <a class="link-btn" href="https://bit.ly/4tDH0t5" target="_blank">View Bottom &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <div class="img-wrapper">
+            <img src="/Users/roperdegarmo/Downloads/LB1VB72_LB1VB90_IND_2059.webp" alt="La Blanca Navy Stripe">
+        </div>
+        <div class="card-body">
+            <div class="brand">La Blanca</div>
+            <div class="name">Linea Costa Navy Stripe V-Neck Top & High-Waist Bottom</div>
+            <div class="price">~$75 top + ~$75 bottom</div>
+            <div class="desc">Classic navy/white stripe. Deep V-neck bralette-style top. High-waisted bottom with gold hardware accent. Timeless nautical styling.</div>
+            <div class="notes">The original inspiration photo. Clean, classic, gold hardware detail. Look for this style in-store.</div>
+            <a class="link-btn" href="https://bit.ly/3OiiDRB" target="_blank">View Collection &rarr;</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="store-info">
+    <h2>Where We're Going</h2>
+    <p>
+        <strong>Swimwear Solution</strong><br>
+        4845 W 119th St, Overland Park, KS 66209<br>
+        (913) 345-1243 &bull; Open today until 6pm<br>
+        <a href="https://www.swimwearsolutionkc.com/" target="_blank">swimwearsolutionkc.com</a>
+    </p>
+    <p style="margin-top: 12px; font-size: 13px; color: #999;">
+        Show this page to the consultant &mdash; they carry La Blanca, Becca, and Sunsets Separates.<br>
+        Use these picks as reference for the style, fit, and vibe Rachel likes.
+    </p>
+</div>
+
+</body>
+</html>
