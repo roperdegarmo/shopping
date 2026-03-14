@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Self-Cleaning Litter Boxes - March 2026</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f0;
+            color: #333;
+            padding: 24px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .buying-guide {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .buying-guide h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        .buying-guide ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .buying-guide li {
+            background: #e8e8e4;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #444;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        .card.favorite { border: 3px solid #2d6a4f; }
+        .card.favorite .badge {
+            display: inline-block;
+            background: #2d6a4f;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 0 0 8px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card .category-badge {
+            display: inline-block;
+            background: #555;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 0 0 8px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card .category-badge.budget { background: #b45309; }
+        .card .category-badge.large { background: #7c3aed; }
+        .card .category-badge.compact { background: #0369a1; }
+        .img-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: #f0f0ec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-wrapper .placeholder {
+            font-size: 64px;
+            opacity: 0.3;
+        }
+        .card-body {
+            padding: 16px 20px 20px;
+        }
+        .brand {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+        .name {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin-bottom: 8px;
+        }
+        .desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .specs {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .specs span {
+            background: #f0f0ec;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+        .notes {
+            font-size: 13px;
+            color: #8b6914;
+            background: #fdf8e8;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .link-btn:hover { background: #333; }
+        .comparison {
+            max-width: 700px;
+            margin: 40px auto 0;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .comparison h2 { font-size: 16px; margin-bottom: 16px; }
+        .comparison table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .comparison th {
+            text-align: left;
+            padding: 8px 10px;
+            border-bottom: 2px solid #e8e8e4;
+            color: #666;
+            font-weight: 600;
+        }
+        .comparison td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #f0f0ec;
+        }
+        .comparison tr:last-child td { border-bottom: none; }
+        .sources {
+            max-width: 700px;
+            margin: 24px auto 0;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+        .sources a { color: #888; }
+    </style>
+</head>
+<body>
+
+<h1>Best Self-Cleaning Litter Boxes</h1>
+<p class="subtitle">Shopping Research &mdash; March 2026</p>
+
+<div class="buying-guide">
+    <h2>What to Look For</h2>
+    <ul>
+        <li>Clumping litter compatible</li>
+        <li>Quiet operation (&lt;40 dB)</li>
+        <li>App / WiFi control</li>
+        <li>Multi-cat support</li>
+        <li>Safety sensors</li>
+        <li>Odor control system</li>
+        <li>Large waste bin capacity</li>
+        <li>Easy to clean &amp; maintain</li>
+    </ul>
+</div>
+
+<div class="grid">
+
+    <!-- CARD 1: FAVORITE - Litter-Robot 4 -->
+    <div class="card favorite">
+        <div class="img-wrapper">
+            <span class="badge">Top Pick</span>
+            <span class="placeholder">&#128049;</span>
+        </div>
+        <div class="card-body">
+            <div class="brand">Whisker</div>
+            <div class="name">Litter-Robot 4</div>
+            <div class="price">$699</div>
+            <div class="desc">The gold standard in self-cleaning litter boxes. Rotating globe automatically separates waste from clean litter into a sealed waste drawer. WiFi-connected app tracks litter levels, cat weight, and usage. OdorTrap system with sealed waste drawer minimizes smell. 10,000+ five-star reviews.</div>
+            <div class="specs">
+                <span>Rotating globe</span>
+                <span>WiFi app</span>
+                <span>Multi-cat</span>
+                <span>OdorTrap</span>
+                <span>90-day trial</span>
+            </div>
+            <div class="notes">Most recommended across nearly every major review site. Proven reliability since 2022. Best balance of features, performance, and price.</div>
+            <a class="link-btn" href="https://www.litter-robot.com/litter-robot-4.html" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 2: Litter-Robot 5 Pro -->
+    <div class="card">
+        <div class="img-wrapper">
+            <span class="category-badge">Premium</span>
+            <span class="placeholder">&#128049;</span>
+        </div>
+        <div class="card-body">
+            <div class="brand">Whisker</div>
+            <div class="name">Litter-Robot 5 Pro</div>
+            <div class="price">$899</div>
+            <div class="desc">The most advanced Litter-Robot yet. Dual 1080p HD night-vision cameras for live streaming and recording. AI-powered WasteID distinguishes urine from feces for optimized cleaning cycles. LCD screen, larger waste drawer, and facial recognition for individual cat tracking.</div>
+            <div class="specs">
+                <span>Dual cameras</span>
+                <span>AI WasteID</span>
+                <span>Night vision</span>
+                <span>LCD screen</span>
+                <span>Whisker+ ready</span>
+            </div>
+            <div class="notes">Top pick at Cats.com. Worth the upgrade if you want cameras, AI health insights, and individual cat identification. Whisker+ subscription ($7.99/mo) unlocks full AI features.</div>
+            <a class="link-btn" href="https://www.litter-robot.com/litter-robot-5-pro.html" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 3: PetKit PuraMax 2 -->
+    <div class="card">
+        <div class="img-wrapper">
+            <span class="category-badge compact">Best for Small Spaces</span>
+            <span class="placeholder">&#128049;</span>
+        </div>
+        <div class="card-body">
+            <div class="brand">PetKit</div>
+            <div class="name">PuraMax 2 Automatic Litter Box</div>
+            <div class="price">$399 &ndash; $499</div>
+            <div class="desc">Compact design ideal for apartments and smaller spaces. Sealed cylinder with triple deodorization system excels at odor control. 7L waste bin handles up to 15 days between changes. xSecure safety structure with multiple sensors. App-connected health tracking for each cat.</div>
+            <div class="specs">
+                <span>Compact</span>
+                <span>Triple deodorize</span>
+                <span>15-day capacity</span>
+                <span>App control</span>
+                <span>xSecure safety</span>
+            </div>
+            <div class="notes">Best alternative to Litter-Robot at a lower price point. Excellent odor control even in multi-cat homes. Frequently on sale &mdash; check for deals under $300.</div>
+            <a class="link-btn" href="https://petkit.com/products/petkit-puramax-2" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 4: homerunPET CS106 -->
+    <div class="card">
+        <div class="img-wrapper">
+            <span class="category-badge large">Best for Large Cats</span>
+            <span class="placeholder">&#128049;</span>
+        </div>
+        <div class="card-body">
+            <div class="brand">homerunPET</div>
+            <div class="name">CS106 Self-Cleaning Litter Box</div>
+            <div class="price">$699 (launch promo, reg. $899)</div>
+            <div class="desc">The world's biggest self-cleaning litter box with a 106L dome capacity &mdash; 40% larger than standard models. Built for cats up to 25 lbs and multi-cat households (up to 4 cats). Industry-first auto-refill system dispenses clean litter from a 4.5L reservoir. 12L+ waste bin. Under 39 dB operation.</div>
+            <div class="specs">
+                <span>106L capacity</span>
+                <span>Up to 25 lbs</span>
+                <span>Auto-refill</span>
+                <span>Zero-pinch safety</span>
+                <span>90-day trial</span>
+            </div>
+            <div class="notes">Best choice for Maine Coons, Ragdolls, and other large breeds. WIRED "Best for Large Cats" pick. 18-inch wide entry. Auto-refill feature is a standout you won't find elsewhere.</div>
+            <a class="link-btn" href="https://homerunpet.com/products/cs106-self-cleaning-litter-box" target="_blank">View Product &rarr;</a>
+        </div>
+    </div>
+
+    <!-- CARD 5: Pet Zone Smart Scoop -->
+    <div class="card">
+        <div class="img-wrapper">
+            <span class="category-badge budget">Best Budget</span>
+            <span class="placeholder">&#128049;</span>
+        </div>
+        <div class="card-body">
+            <div class="brand">Pet Zone</div>
+            <div class="name">Smart Scoop Automatic Litter Box</div>
+            <div class="price">~$235</div>
+            <div class="desc">No-frills automatic scooping at a fraction of the price. Smart sensor triggers cleaning 15 minutes after your cat leaves. Works with any clumping litter &mdash; no expensive refills or crystals needed. Metal rake and gears for durability. 4x quieter than competing brands. Carbon zeolite odor filter.</div>
+            <div class="specs">
+                <span>Rake system</span>
+                <span>Any clumping litter</span>
+                <span>Metal gears</span>
+                <span>Low noise</span>
+                <span>No refills needed</span>
+            </div>
+            <div class="notes">Best entry-level option. No WiFi or app, but gets the job done at a fraction of the cost. Great if you want automatic scooping without the premium price tag. Check availability &mdash; sometimes out of stock.</div>
+            <a class="link-btn" href="https://www.amazon.com/Pet-Zone-Smart-Automatic-Litter/dp/B00J5FC7HU" target="_blank">View on Amazon &rarr;</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="comparison">
+    <h2>Quick Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Best For</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Litter-Robot 4</strong></td>
+                <td>$699</td>
+                <td>Overall best</td>
+                <td>Rotating globe</td>
+            </tr>
+            <tr>
+                <td><strong>Litter-Robot 5 Pro</strong></td>
+                <td>$899</td>
+                <td>Premium / AI features</td>
+                <td>Rotating globe</td>
+            </tr>
+            <tr>
+                <td><strong>PetKit PuraMax 2</strong></td>
+                <td>$399&ndash;$499</td>
+                <td>Small spaces</td>
+                <td>Rotating cylinder</td>
+            </tr>
+            <tr>
+                <td><strong>homerunPET CS106</strong></td>
+                <td>$699</td>
+                <td>Large cats / multi-cat</td>
+                <td>Rotating dome</td>
+            </tr>
+            <tr>
+                <td><strong>Pet Zone Smart Scoop</strong></td>
+                <td>~$235</td>
+                <td>Budget pick</td>
+                <td>Rake system</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="sources">
+    <p>
+        Research compiled from
+        <a href="https://cats.com/reviews/best-self-cleaning-litter-box" target="_blank">Cats.com</a>,
+        <a href="https://www.cnn.com/cnn-underscored/reviews/best-self-cleaning-litter-boxes" target="_blank">CNN Underscored</a>,
+        <a href="https://www.catster.com/lifestyle/best-automatic-cat-litter-box/" target="_blank">Catster</a>,
+        <a href="https://www.kinship.com/cat-shopping/self-cleaning-litter-boxes" target="_blank">Kinship</a>,
+        and <a href="https://www.consumerreports.org/home-garden/pets/best-cat-litter-boxes-a7688686907/" target="_blank">Consumer Reports</a>
+        &mdash; March 2026
+    </p>
+</div>
+
+</body>
+</html>
